@@ -13,9 +13,8 @@
 name: "Nightly"
 on:
   # To enable "nightly" on closing pull requests uncomment the following:
-  pull_request:
-    branches: [ main ]
-     types: [ closed ]
+  push:
+    - main
   schedule:
     # every day at midnight
     - cron: "0 0 * * *"
