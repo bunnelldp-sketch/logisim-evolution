@@ -90,6 +90,7 @@ teavm {
     all {
         mainClass = "example.MainClass"
     }
+}
 /**
  * Setting up all shared vars and parameters.
  */
