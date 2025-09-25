@@ -22,7 +22,6 @@ plugins {
   application
   id("com.gradleup.shadow") version "9.1.0"
   id("org.sonarqube") version "6.3.1.5724"
-  id("org.teavm") version "0.12.3"
 }
 
 repositories {
@@ -47,7 +46,6 @@ dependencies {
   implementation("commons-cli:commons-cli:1.10.0")
   implementation("com.vladsch.flexmark:flexmark-all:0.64.8")
   implementation("org.apache.commons:commons-text:1.14.0")
-  implementation("teavm.libs.jsoApis")
 
   // NOTE: Be aware of reported issues with Eclipse and Batik
   // See: https://github.com/logisim-evolution/logisim-evolution/issues/709
@@ -85,11 +83,6 @@ val UPPERCASE_PROJECT_NAME = "uppercaseProjectName"
 java {
   sourceCompatibility = JavaVersion.VERSION_21
   targetCompatibility = JavaVersion.VERSION_21
-}
-teavm {
-    all {
-        mainClass = "example.MainClass"
-    }
 }
 /**
  * Setting up all shared vars and parameters.
